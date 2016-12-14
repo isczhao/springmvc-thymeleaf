@@ -27,5 +27,9 @@
 	<bean class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
 		<property name="templateEngine" ref="templateEngine" />
 	</bean>
+	
+	<mvc:resources location="/images/" mapping="/WEB-INF/images/**" />
+	<mvc:resources location="/css/" mapping="/WEB-INF/css/**" />
+	<mvc:resources location="/js/" mapping="/WEB-INF/js/**" />
 
 </beans>
